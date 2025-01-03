@@ -43,7 +43,7 @@ Resources:
     Properties:
       GroupDescription: Automatically created Security Group for Application LB.
       SecurityGroupIngress:
-        - CidrIp: 0.0.0.0/0
+        - CidrIp: 152.230.46.42/32
           Description: Allow from anyone on port 80
           FromPort: 80
           IpProtocol: tcp
