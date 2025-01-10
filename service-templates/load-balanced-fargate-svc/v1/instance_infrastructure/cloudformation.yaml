@@ -48,11 +48,6 @@ Resources:
           FromPort: 80
           IpProtocol: tcp
           ToPort: 80
-        - SourceSecurityGroupId: pl-daa94cb3
-          Description: Allow from anyone on port 80
-          FromPort: 80
-          IpProtocol: tcp
-          ToPort: 80
       VpcId: '{{environment.outputs.VPC}}'
   LoadBalancerSecurityGrouptoServiceSecurityGroup:
     Type: 'AWS::EC2::SecurityGroupEgress'
